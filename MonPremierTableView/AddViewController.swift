@@ -2,7 +2,7 @@
 //  AddViewController.swift
 //  MonPremierTableView
 //
-//  Created by d0m on 30/11/2021.
+//  Created by Naoher on 14/01/2022.
 //
 
 import UIKit
@@ -11,13 +11,15 @@ class AddViewController: UIViewController {
 
     @IBOutlet weak var myTitle: UITextField!
     @IBOutlet weak var myDescription: UITextField!
+    
+    @IBOutlet weak var dateTodo: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
+    
     /*
     // MARK: - Navigation
 

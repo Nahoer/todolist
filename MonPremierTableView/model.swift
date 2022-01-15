@@ -2,19 +2,25 @@
 //  model.swift
 //  MonPremierTableView
 //
-//  Created by d0m on 30/11/2021.
+//  Created by Naoher on 14/01/2022.
 //
 
 import Foundation
 
 class MyData {
     var title: String
-    var description: String
-    var image: String
+    var date: Date
+    var isDone: Bool
     
-    init(title: String, description: String, image: String ) {
+    init(title: String, date: Date) {
         self.title = title
-        self.description = description
-        self.image = image
+        self.date = date
+        self.isDone = false;
+    }
+    
+    func dateToString()->String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy à hh:mm"
+        return dateFormatter.string(from: self.date)
     }
 }
